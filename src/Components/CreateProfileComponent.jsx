@@ -37,7 +37,7 @@ class CreateProfileComponent extends Component {
     }
     handleSubmit = event => {
         event.preventDefault();   
-        fetch('http://localjobseeker.azurewebsites.net/api/Profile', {
+        fetch('https://localjobseeker.azurewebsites.net/api/Profile', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

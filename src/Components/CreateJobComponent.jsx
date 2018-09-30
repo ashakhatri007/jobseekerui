@@ -40,7 +40,7 @@ class CreateJobComponent extends Component{
     }
     handleSubmit = event => {
         event.preventDefault();   
-        fetch('http://localjobseeker.azurewebsites.net/api/Job', {
+        fetch('https://localjobseeker.azurewebsites.net/api/Job', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
