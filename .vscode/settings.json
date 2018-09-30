@@ -1,0 +1,7 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/f39a66f0-025e-4d3f-bf96-c55e845141eb/resourceGroups/appsvc_rg_linux_centralus/providers/Microsoft.Web/sites/LocalJobSeekerUI",
+    "appService.deploySubpath": ""
+}
