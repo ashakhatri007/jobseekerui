@@ -66,7 +66,7 @@ class CreateJobComponent extends Component{
                 JobPostedDate : this.state.JobPostedDate
             }),
             })
-            .then((response) => response.json())
+            .then((response) => response.json)
                 .then(() => {
                     alert("Record created succcessfully!");
                 })

@@ -59,7 +59,7 @@ class CreateProfileComponent extends Component {
                 Locality : this.state.Locality
             }),
             })
-            .then((response) => response.json())
+            .then((response) => response.json)
                 .then(() => {
                 alert("Record created succcessfully!");
             })
