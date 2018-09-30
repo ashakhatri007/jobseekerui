@@ -61,12 +61,12 @@ class CreateProfileComponent extends Component {
             })
             .then((response) => response.json())
             .then((response) => response.json())
-            .then((responseJson) => {
-                alert("Record created succcessfully!")
+            .then(() => {
+                alert("Record created succcessfully!");
             })
             .catch((error) => {
-                alert("There was some problem creating record!")
-            console.error(error);
+                alert("There was some problem creating record!");
+                console.error(error);
             });
       }
     render() {
