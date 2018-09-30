@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { CountryDropdown, RegionDropdown, CountryRegionData } from 'react-country-region-selector';
 import PropTypes from 'prop-types';
 import './CreateProfileComponent.css';
+const { CountryDropdown, RegionDropdown, CountryRegionData } = require('react-country-region-selector');
 class Address extends Component {
     constructor (props) {
         super(props);
