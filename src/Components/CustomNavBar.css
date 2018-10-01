@@ -1,11 +1,13 @@
 nav.navbar, .navbar-default {
-  background-color: #2892D7 !important;
+  background-color:blue;
 }
 
 .navbar-default {
-  background-image: none;
-  border: none;
-  border-radius: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:blue;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -13,27 +15,31 @@ nav.navbar, .navbar-default {
 }
 
 .navbar-default .navbar-brand {
-  color: white;
+  background-color: transparent;
+  color: black;
 }
 
 .navbar-default .navbar-toggle {
-  border-color: white;
+  border-color: black;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: white;
+  background-color: rgb(95, 13, 20);
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: transparent;
+.navbar-default:hover .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #111;
 }
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-  color: white;
-  background-color: transparent;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: rgb(0, 128, 0);
-  background-color: transparent;
+  color: white;
+  background-color: #111;
 }
