@@ -66,13 +66,13 @@ class CreateJobComponent extends Component{
                 JobPostedDate : this.state.JobPostedDate
             }),
             })
-            .then((response) => response.json())
-                .then((responseJson) => {
-                    alert("Record created succcessfully!")
+            .then((response) => response.json)
+                .then(() => {
+                    alert("Record created succcessfully!");
                 })
                 .catch((error) => {
-                    alert("There was some problem creating record!")
-                console.error(error);
+                    alert("There was some problem creating record!");
+                    console.error(error);
                 });
       }
     render() {

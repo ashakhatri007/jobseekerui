@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './CreateProfileComponent.css';
+import PropTypes from 'prop-types';
 class Address extends Component {
     constructor (props) {
         super(props);
@@ -23,7 +23,7 @@ class Address extends Component {
       render () 
       {
         return (
-            <span  onChange = {this.onChangeAddress}>
+            <p  onChange = {this.onChangeAddress}>
             <label for="Country">Country</label>
             <input type="text" id="Country" name="Country" placeholder="Your country"  onChange={this.handleChange}/>
             <label for="State">State</label>
@@ -34,7 +34,7 @@ class Address extends Component {
               <input type="text" id="Pincode" name="Pincode"  onChange={this.handleChange}/>
               <label for="Locality">Locality</label>
               <input type="text" id="Locality" name="Locality"  onChange={this.handleChange}/>
-              </span>
+              </p>
         );
       }
   }
