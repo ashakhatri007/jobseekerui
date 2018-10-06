@@ -5,28 +5,16 @@ import './CustomNavBar.css';
 
 export default class CustomNavBar extends Component {
   render() {
+
     return (
-      <Navbar default collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <Link to="/">JobSeeker</Link>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav pullRight>
-            <NavItem eventKey={1} componentClass={Link} href="/" to="/">
-              Home
-            </NavItem>
-            <NavItem eventKey={2} componentClass={Link} href="/createProfile" to="/createProfile">
-              Create Profile
-            </NavItem>
-            <NavItem eventKey={3} componentClass={Link} href="/createJob" to="/createJob">
-                Create Job
-            </NavItem>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <div class="topnav" id="myTopnav">
+        <a href="/" >Home</a>
+        <a href="/CreateProfile">CreateProfile</a>
+        <a href="/CreateJob">CreateJob</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
     )
   }
 }

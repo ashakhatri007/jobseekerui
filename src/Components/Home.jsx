@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Jumbotron,Grid,Row,Col,Image,Button} from 'react-bootstrap';
+import { Row,Col} from 'react-bootstrap';
 import './Home.css';
+
 class Home extends Component{
 
     constructor(){
@@ -50,22 +51,32 @@ class Home extends Component{
             return<p>{error.message}</p>
         }
         return(
-            <Grid>
-                    <Jumbotron>
-                        <h2> Welcome to Local JobSeeker Website, Checkout some recently posted jobs </h2>
-                    </Jumbotron>
-                    <Row className="show-grid text-center">
-                        {jobs.map(data =>
-                        <Col xs={12} sm={4} className="person-wrapper" key = {data.JobId}>
-                            <Image src="assets/person-1.jpg" circle className="profile-pic"/>
-                            <p>Store Name: {data.StoreName}</p>
-                            <p>Job Description: {data.JobDescription}</p>
-                            <p>Job Location: {data.Locality}</p>
-                        </Col>
-                       )}
-                    </Row>
-               
-            </Grid>
+        <Row className="show-grid text-center">
+        <marquee behavior="alternate"><span class="marquee">View some recently created Jobs</span></marquee>
+            {jobs.map(data =>
+                <Col xs={12} sm={4} className="person-wrapper" key = {data.JobId}>
+                    <div class="column">
+                        <div class="demo-title"></div>
+                            <div class="post-module hover">
+
+                                <div class="thumbnail">
+                                    <div class="date">
+                                    <div class="day">{data.JobPostedDate}</div>
+                                    
+                                    </div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"/>
+                                </div>
+                            
+                                <div class="post-content">
+                                    <div class="category">Job Category : {data.JobType}</div>
+                                    <h1 class="title">{data.StoreName}</h1>
+                                    <h2 class="sub_title">Location : {data.City}</h2>
+                                    <p class="description">{data.JobDescription}</p>
+                                </div>
+                            </div>
+                    </div>
+                </Col>
+            )}
+        </Row>
         )
     }
 }
